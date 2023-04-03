@@ -1,0 +1,199 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--deep-dark: rgb(26, 26, 26);
+	--light-dark: rgb(79, 82, 92);
+	--light-green: rgb(0, 255, 136);
+	--dark-green: rgb(2, 161, 36);
+	--light: rgb(245, 245, 245);
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('./calendar-g26e506892_1920.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: var(--light);
+	text-transform: uppercase;
+	font-family: 'Pacifico', cursive;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 800px;
+	position: absolute;
+	top: 100px;
+	text-align: center;
+	background: #fff;
+    border-radius: 15px;
+	box-shadow: 8px 8px 15px rgba(82, 82, 82, 0.8);
+	background-color: var(--light-dark);
+}
+
+.header__todo {
+	width: 800px;
+	padding: 40px;
+	border-radius: 5px 5px 0 0;
+}
+
+.header__input {
+	width: 80%;
+	padding: 10px 20px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--light-dark);
+	background-color: var(--light);
+}
+
+.header__alert--info {
+	margin-top: 20px;
+	color: var(--light);
+}
+
+.header__add--btn {
+	padding: 10px 22px;
+	border: none;
+	border-radius: 5px;
+	color: var(--deep-dark);
+	background-color: var(--light);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.header__add--btn:hover {
+	color: var(--light);
+	background-color: var(--dark-green);
+}
+
+.header__todo--list {
+	width: 800px;
+	padding: 20px 0;
+}
+
+.header__todo--list h3 {
+    color: var(--light);
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.header__todo--list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    font-size: 30px;
+	margin: 15px;
+	padding-left: 20px;
+	font-family: 'Pacifico', cursive;
+	list-style: none;
+	background-color: var(--light);
+    border-radius: 5px
+}
+
+.tools {
+	display: inline-block;
+}
+
+.tools button {
+	padding: 15px 10px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.tools button:hover {
+	background-color: #ddd;
+}
+
+.complete {
+	color: var(--light-green);
+}
+
+.edit {
+	font-weight: bold;
+	color: rgb(15, 45, 179);
+}
+
+.delete {
+	color: tomato;
+}
+
+.completed {
+	font-size: 12px;
+	font-style: italic;
+	color: var(--light-dark);
+	text-decoration: line-through;
+}
+
+.popup {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	width: 800px;
+	color: var(--light);
+	background-color: var(--deep-dark);
+	border-radius: 5px;
+}
+
+.popup h3 {
+	padding: 20px;
+}
+
+.popup__body--info {
+	margin-bottom: 20px;
+	color: var(--light);
+}
+
+.popup__body {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	padding: 10px;
+}
+
+.popup__body--input {
+	width: 100%;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--light-dark);
+	background-color: var(--light);
+}
+
+.popup__body--btn {
+	display: inline-block;
+	width: 30%;
+	padding: 10px 22px;
+	margin: 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--deep-dark);
+	background-color: var(--light);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.popup__body--btn:hover {
+	color: #fff;
+	background-color: var(--light-green);
+}
