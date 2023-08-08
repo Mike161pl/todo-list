@@ -4,7 +4,7 @@
 
 Another ToDoList... After all, I created this project to develop and improve my basic skills in JavaScript.
 
-![screen](./todo-list/toDoList.png)
+![screen](./toDoList.png)
 
 &nbsp;
 
